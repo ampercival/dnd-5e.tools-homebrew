@@ -1,0 +1,407 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AMPHomebrewSource",
+				"abbreviation": "AMP",
+				"full": "AMP Homebrew",
+				"version": "1",
+				"url": "amp_hb",
+				"authors": [
+					"Aaron Percival"
+				]
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Grael, The TInkerer",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"source": "AMPHomebrewSource",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 40",
+				"average": 76
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 10,
+			"con": 20,
+			"int": 18,
+			"wis": 14,
+			"cha": 11,
+			"passive": 14,
+			"cr": "7",
+			"save": {
+				"con": "+8",
+				"wis": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"religion": "+7"
+			},
+			"immune": [
+				{
+					"immune": [
+						"fire",
+						"poison",
+						"psychic"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"languages": [
+				"Abyssal",
+				"Celestial",
+				"Common",
+				"Draconic",
+				"Dwarvish"
+			],
+			"languageTags": [
+				"AB",
+				"CE",
+				"C",
+				"DR",
+				"D"
+			],
+			"trait": [
+				{
+					"name": "Constructed Nature.",
+					"entries": [
+						"Grael doesn’t require air, food, drink or sleep."
+					]
+				},
+				{
+					"name": "Immutable Form.",
+					"entries": [
+						"Grael is immune to any spell or effect that would alter her form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Greal has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"level": 10,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Grael is a 10th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 15}, +7 to hit with spell attacks). She has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt|XPHB}",
+								"{@spell mage hand|XPHB}",
+								"{@spell mending|XPHB}",
+								"{@spell message|XPHB}",
+								"{@spell shocking grasp|XPHB}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell expeditious retreat|XPHB}",
+								"{@spell false life|XPHB}",
+								"{@spell fog cloud|XPHB}",
+								"{@spell thunderwave|XPHB}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell mirror image|XPHB}",
+								"{@spell misty step|XPHB}",
+								"{@spell scorching ray|XPHB}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell|XPHB}",
+								"{@spell lightning bolt|XPHB}",
+								"{@spell slow|XPHB}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight|XPHB}",
+								"{@spell dimension door|XPHB}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects|XPHB}",
+								"{@spell cloudkill|XPHB}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"action": [
+				{
+					"name": "Multiattack.",
+					"entries": [
+						"Grael uses Rapid Construction if she can and makes two Slam attacks."
+					]
+				},
+				{
+					"name": "Slam.",
+					"entries": [
+						"Slam. Melee Weapon Attack: {@hit 8} to hit, reach 5 ft., one target.",
+						"{@h}10 ({@damage 1d10 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rapid Construction (Recharges after a Short or Long Rest).",
+					"entries": [
+						"Grael magically creates a construct minion out of scrap and spare parts. The construct minion appears in an unoccupied space next to Grael or the closest available space. Roll initiative for the construct minion. The construct minion acts on its own turn and obeys Grael’s commands. The construct minion acts as an ally of Grael and remains active for 10 minutes or until Grael deactivates it as an action. The construct minion has the statistics of a beast with a challenge rating of 5 or lower with the following changes:",
+						"- Its type changes to construct and it gains resistance to bludgeoning, piercing and slashing damage from nonmagical attacks that aren’t adamantine.",
+						"- It is immune to poison damage and {@condition exhaustion} and can’t be {@condition charmed}, {@condition poisoned} or {@condition frightened}.",
+						"- It has blindsight up to 60 ft. (blind beyond this radius).",
+						"It gains the following trait: Antimagic Susceptibility. The minion is {@condition incapacitated} while in the area of an antimagic field. If targeted by dispel magic, the minion must succeed on a Constitution saving throw against the caster’s spell save DC or fall {@condition unconscious} for 1 minute."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/ampercival/dnd-5e.tools-homebrew/refs/heads/main/images/Grael_The_Tinkerer.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"P",
+				"S",
+				"T"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Tinkered Servant",
+			"source": "AMPHomebrewSource",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 71,
+				"formula": "11d8 + 22"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": {
+					"number": 50,
+					"condition": "aerial / 30 ft. guardian / 50 ft. ravager"
+				}
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 1,
+			"wis": 3,
+			"cha": 10,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 10,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Variable Configuration",
+					"entries": [
+						"The tinkered servant has a variable form that is chosen when it is created. Choose aerial, guardian or ravager. The tinkered servant has different traits and features depending on its configuration."
+					]
+				},
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"The servant is incapacitated while in the area of an {@spell antimagic field|XPHB}. If targeted by {@spell dispel magic|XPHB}, the servant must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute."
+					]
+				},
+				{
+					"name": "Constructed Nature",
+					"entries": [
+						"The tinkered servant doesn't require air, food, drink or sleep."
+					]
+				},
+				{
+					"name": "Flyby (Aerial Form Only)",
+					"entries": [
+						"The tinkered servant doesn't provoke opportunity attacks when it flies out of a creature's reach."
+					]
+				},
+				{
+					"name": "Blood Frenzy (Ravager Form Only)",
+					"entries": [
+						"The tinkered servant has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The tinkered servant makes two melee attacks."
+					]
+				},
+				{
+					"name": "Bite (Ravager Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Glaive (Guardian Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Talons (Aerial Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage, and the target is {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained}, and the tinkered servant can't use its talons on another target."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Protect (Guardian Form Only)",
+					"entries": [
+						"When a creature attacks one of the tinkered servant's allies within 5 feet of it, the tinkered servant can increase the ally's AC by 2 against that attack. To do so, it must be able to see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"attachedItems": [
+				"glaive|phb"
+			],
+			"traitTags": [
+				"Antimagic Susceptibility",
+				"Flyby"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		}
+	]
+}
