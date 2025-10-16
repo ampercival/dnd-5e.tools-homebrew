@@ -218,16 +218,16 @@
 				}
 			],
 			"tokenHref": {
-				"type": "internal",
-				"path": "homebrew/images/creatures/Grael_The_Tinkerer_token.png"
+				"type": "external",
+				"url": "homebrew/images/creatures/Grael_The_Tinkerer_token.webp"
 			},
 			"fluff": {
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "homebrew/images/creatures/Grael_The_Tinkerer.webp"
+							"type":"external",
+							"url": "homebrew/images/creatures/Grael_The_Tinkerer.webp"
 						}
 					}
 				]
