@@ -219,7 +219,7 @@
 			],
 			"tokenHref": {
 				"type": "external",
-				"url": "homebrew/images/creatures/Grael_The_Tinkerer_token.webp"
+				"url": "http://192.168.2.98:5050/homebrew/images/creatures/Grael_The_Tinkerer_token.webp"
 			},
 			"fluff": {
 				"images": [
@@ -227,7 +227,7 @@
 						"type": "image",
 						"href": {
 							"type":"external",
-							"url": "homebrew/images/creatures/Grael_The_Tinkerer.webp"
+							"url": "http://192.168.2.98:5050/homebrew/images/creatures/Grael_The_Tinkerer.webp"
 						}
 					}
 				]
