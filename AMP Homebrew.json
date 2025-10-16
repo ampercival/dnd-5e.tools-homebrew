@@ -218,16 +218,16 @@
 				}
 			],
 			"tokenHref": {
-				"type": "external",
-				"url": ""
+				"type": "internal",
+				"path": "homebrew/images/creatures/Grael_The_Tinkerer_token.png"
 			},
 			"fluff": {
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/ampercival/dnd-5e.tools-homebrew/refs/heads/main/images/Grael_The_Tinkerer.webp"
+							"type": "internal",
+							"path": "homebrew/images/creatures/Grael_The_Tinkerer.webp"
 						}
 					}
 				]
